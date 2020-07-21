@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Media/Images/icon.ico"/>
+    <!-- BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- AnimateCSS
+        <h1 class="animated infinite bounce delay-2s">Example</h1>
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta name="viewport" ontent="width=device-width, initial-scale=1.0">
+
+    <title>AWS Cloud Practitioner Quiz</title>
+</head>
+<body>
+
+
+
+<div id="loader-container">
+    <div id="loader1"></div>
+    <div id="loader2"></div>
+</div>
+
+
+<!-- Header of the Page -->
+<header class="card-header text-white bg-dark text-center">
+<h1> <a href="index.html"> <img src="Media/top.png" class="img-fluid" alt="Responsive image"></a></h1>
+</header>
+
+<!-- Clock -->
+<div id="clock" class="clock">
+    <span id="clockText"></span>
+    
+
+</div>
+<!-- User -->
+<div id="user" class="user">
+    
+    <span id="userText"></span>
+
+</div>
+
+
+
+
+<!-- Content of the Page -->
+<div style="margin-left: 5%; margin-right: 5%; margin-bottom: 10px;" class="bodycontainer rounded-bottom">
+    
+    <div class="card-body text-center">
+        
+        <div class="card-header bg-warning text-center bg-dark text-white" style="margin-bottom: 10px; margin-top: 20px;">
+            <h4>Question <span id="qNum"></span> / 20</h4>
+        </div>   
+        
+        <p class="text-left"><span class="question"></span></p>
+
+        <p>
+            <div class="card-header bg-warning text-center bg-dark text-white">
+                <h4>Answers</h4>
+            </div> 
+        </p>
+        
+        <p>
+
+            <div class="options">
+                <div id="0" class="option1" onclick="check(this)"></div>
+                <div id="1" class="option2" onclick="check(this)"></div>
+                <div id="2" class="option3" onclick="check(this)"></div>
+                <div id="3" class="option4" onclick="check(this)"></div>
+
+
+            </div>
+
+        </p>
+
+           
+        <p>
+            <button type="button" class="btn btn-warning btn-lg" onclick="next()">Next</button>
+                       
+        </p> 
+
+        <p>
+            <div class="card-header bg-warning text-center bg-dark text-white">
+                <h4>Checker</h4>
+            </div> 
+        </p>
+
+
+        <p>
+
+            <div class="answer-tracker">
+                
+            </div>
+
+        </p>
+    </>
+
+
+
+
+
+</div>
+<!-- Footer of the Page -->
+<footer class="card-footer text-secondary bg-dark text-center fixed-bottom">
+    <br><strong>G4Dev - AWS Cloud Practitioner Quiz</strong>
+    <br>Colombia - Valle del Cauca
+    <br> <a href="./LICENSE"> MIT License - Copyright (c) 2020 G4Dev</a>
+    
+    </footer>
+
+
+
+
+<!-- Page Loader 
+<script>
+    window.onload = function(){
+        var carga = document.getElementById('loader-container')
+        carga.style.visibility = 'hidden';
+        carga.style.opacity = '0';
+    }
+</script>-->
+
+
+<div class="testover text-center">
+    <div class="box">
+        <h2>
+            <p class="text-warning">Your Score: <span class="percentage"></span></p>
+        </h2>
+        <h4>
+            <p class="text-light">Well, you finished the test but did not complete the challenge, remember 
+            if you want to earn the badge for RANK B you need to have a Score of 100%</p>
+        </h4>
+        <button type="button" class="btn btn-danger btn-lg" onclick="tryagain()">Try Again</button>
+    </div>
+</div>
+
+
+<div class="testover1 text-center">
+    <div class="box">
+        <h2>
+            <p class="text-warning"><span></span></p>
+        </h2>
+        <h4>
+            <img src="Media/Images/WinBadgeB.png" class="img-fluid ranksF" alt="Responsive image">
+        </h4>
+        <p><button type="button" class="btn btn-danger btn-lg" onclick="twitter()">Share on Twitter</button></p>
+        <p><button type="button" class="btn btn-danger btn-lg" onclick="tryagain()">Try the RANK A Challenge</button></p>
+    </div>
+</div>
+
+<script src="Javascript/Quiz.js"></script>
+</body>
+</html>
