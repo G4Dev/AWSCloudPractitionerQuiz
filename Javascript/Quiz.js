@@ -19,124 +19,34 @@ let score=0;
 const questions=[
 {
     id:1,
-    q: '<strong>WHO IS THE CREATOR OF PYTHON?</strong>',
-    options:['Guido Van Rossum','Bill Gates','Yukihiro Matsumoto','Richard Stallman'],
-    r:0
+    q: '<strong>Platform as a Service (PaaS) is defined as:</strong>',
+    options:['The basic building blocks for cloud IT providing access to networking features, computers, and data storage space.','A completed product that is run and managed by the service provider, and is often referred to as end-user applications.','The underlying infrastructure (usually hardware and operating systems) and allow you to focus on the deployment and management of your applications.','Is a self-service model for accessing, monitoring, and managing remote datacenter infrastructures'],
+    r:2
 }, 
 {
     id:2,
-    q: '<strong>WHAT DOES THIS COMMAND LINE PRINT?</strong><p>>>>print("Easy Stuff")</p>',
-    options:['easy Stuff','Easy Stuff','Easy Stuff"','Easy stuff'],
-    r:1
+    q: '<strong>AWS helps reduce total cost of ownership (TCO) by reducing the need to invest in large captial expenditures.</strong>',
+    options:['True','False','Maybe','No Idea'],
+    r:0
 },
 {
     id:3,
-    q: '<strong>WHAT DOES THIS COMMAND LINE PRINT?</strong><p>>>>print("{:d} karlgarmor".format(32))</p>',
-    options:['32 karlgarmor','karlgarmor 32','32Karlgarmor"','32 Karlgarmor'],
+    q: '<strong>Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources.</strong>',
+    options:['True','False','Maybe','No Idea'],
     r:0
 },
 {
     id:4,
-    q: '<strong>WHAT DOES THIS COMMAND LINE PRINT?</strong><p>>>>print("{:d} is, {}".format(1, "int"))</p>',
-    options:['1 is int','int is 1','1 is, int','1is,int'],
-    r:2
+    q: '<strong>Is a self-service model for accessing, monitoring, and managing remote datacenter infrastructures</strong>',
+    options:['Network as a Service (NaaS)','Software as a Service (SaaS)','Platform as a Service (PaaS)','Infrastructure as a Service (IaaS)'],
+    r:3
 }, 
 {
     id:5,
-    q: '<strong>WHAT DOES THIS COMMAND LINE PRINT?</strong><p>>>>a = "Python is cool"<p>>>>print(a[4])</p>',
-    options:['P','n','o','h'],
+    q: '<strong>Select the benefits of cloud computing</strong>',
+    options:['Show the content more beautiful, Help the user built your service','Benefit from massive economies of scale, In the cloud there is no contamination','Increase speed and agility, Stop guessing about capacity','Trade capital expense for variable expense, To be more popular company'],
     r:2
 },
-{
-    id:6,
-    q: '<strong>WHAT STAND FOR PIP?</strong>',
-    options:['Python In Package','Package Installer for Python','Python Is Push','Package Inside Package'],
-    r:1
-},
-{
-    id:7,
-    q: '<strong>WHAT IS PYTHON?</strong>',
-    options:['A low-level, non-object-oriented compiled programming language','A machine language executed in a java virtual machine','A high-level object-oriented interpreted programming language','A programming language invented by the creator of Linux'],
-    r:2
-},
-{
-    id:8,
-    q: '<strong>THAT DATA TYPE IS NOT INTEGER</strong>',
-    options:['0x18','0b010011','12.','60'],
-    r:2
-},
-{
-    id:9,
-    q: '<strong>WHAT DO THESE LINES PRINT?</strong><p>if True:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Hello")<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("World")',
-    options:['Hello World','Hello','World','hello'],
-    r:1
-},
-{
-    id:10,
-    q: '<strong>WHAT DO THESE LINES PRINT?</strong><p>a = 12<p>if a > 2:<br>&nbsp;&nbsp;&nbsp;&nbsp;if a % 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Bye")<br>&nbsp;&nbsp;&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Hello")<br>else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("World")',
-    options:['Bye','Hello','World','12'],
-    r:0
-},
-{
-    id:11,
-    q: '<strong>WHAT DO THESE LINES PRINT?</strong><p>for i in range(4):<br>&nbsp;&nbsp;&nbsp;&nbsp;print(i, end=" ")',
-    options:['1 2 3 4','1 2 3','0 1 2 3','0 1 2 3 4'],
-    r:2
-},
-{
-    id:12,
-    q: '<strong>TO ADD AN ALTERNATIVE CONDITION TO A CONDITIONAL IF STATEMENT USE</strong>',
-    options:['elsif','else if','elif','elseif'],
-    r:2
-},
-{
-    id:13,
-    q: '<strong>WHAT IS THE CORRECT WAY TO WRITE A WHILE LOOP?</strong>',
-    options:['while (a < 5)','while a foreach[0..4]','while a < 5:','while a in range(0..4)'],
-    r:2
-},
-{
-    id:14,
-    q: '<strong>WHAT IS THE CORRECT WAY TO WRITE A FOR LOOP?</strong>',
-    options:['for a in range(0, 3):','for(a in range[0..3])','for a in range(0..3)','for(a=0; a<3; a++)'],
-    r:0
-},
-{
-    id:15,
-    q: '<strong>WHICH OF THE FOLLOWING IS A DICTIONARY TYPE OBJECT?</strong>',
-    options:["dicc = {'Num' -> 1, 'Name' -> 'Carlos'}","dicc = {'Num' => 1, 'Name' => 'Carlos'}","dicc = ('Num': 1, 'Name': 'Carlos')","dicc = {'Num': 1, 'Name': 'Carlos'}"],
-    r:3
-},
-{
-    id:16,
-    q: '<strong>WHAT IS A LIST IN PYTHON?</strong>',
-    options:["is a collection which is ordered and changeable. Allows duplicate members.","is a collection which is ordered and unchangeable. Allows duplicate members.","is a collection which is unordered and unindexed. No duplicate members.","is a collection which is unordered, changeable and indexed. No duplicate members."],
-    r:0
-},
-{
-    id:17,
-    q: '<strong>WHAT IS A DICTIONARY IN PYTHON?</strong>',
-    options:["is a collection which is ordered and changeable. Allows duplicate members.","is a collection which is ordered and unchangeable. Allows duplicate members.","is a collection which is unordered and unindexed. No duplicate members.","is a collection which is unordered, changeable and indexed. No duplicate members."],
-    r:3
-},
-{
-    id:18,
-    q: '<strong>WHAT IS A SET IN PYTHON?</strong>',
-    options:["is a collection which is ordered and changeable. Allows duplicate members.","is a collection which is ordered and unchangeable. Allows duplicate members.","is a collection which is unordered and unindexed. No duplicate members.","is a collection which is unordered, changeable and indexed. No duplicate members."],
-    r:2
-},
-{
-    id:19,
-    q: '<strong>WHAT IS A TUPLE IN PYTHON?</strong>',
-    options:["is a collection which is ordered and changeable. Allows duplicate members.","is a collection which is ordered and unchangeable. Allows duplicate members.","is a collection which is unordered and unindexed. No duplicate members.","is a collection which is unordered, changeable and indexed. No duplicate members."],
-    r:1
-},
-{
-    id:20,
-    q: '<strong>WHAT DO THESE LINES PRINT?</strong><p>>>>def my_function(counter=89):<br>>>>&nbsp;&nbsp;&nbsp;&nbsp;print("Counter: {}".format(counter))<br>>>><br>>>>my_function()',
-    options:["Counter: 12","Counter: 89","Counter: 101","Nothing"],
-    r:1
-}   
 
 
 
