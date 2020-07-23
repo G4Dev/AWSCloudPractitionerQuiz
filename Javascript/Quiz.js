@@ -47,7 +47,12 @@ const questions=[
     options:['Show the content more beautiful, Help the user built your service','Benefit from massive economies of scale, In the cloud there is no contamination','Increase speed and agility, Stop guessing about capacity','Trade capital expense for variable expense, To be more popular company'],
     r:2
 },
-
+{
+    id:6,
+    q: '<strong>Select some of AWS Security Certifications</strong>',
+    options:['ACPA, SOC','FPS, ISO','FIMA, ITAR','HIPA, ISAE'],
+    r:3
+},
 
 
 ]
