@@ -248,3 +248,5 @@ function cronometro () {
          if (hh < 10) {hh = "0"+hh;}
          pantalla.innerHTML = hh+" : "+mm+" : "+ss;
          }
+
+         document.getElementById("TNum").innerText=questions.length;
