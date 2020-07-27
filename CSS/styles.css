@@ -296,13 +296,12 @@ padding-top: 7px;
     border-radius: 5%;
     background-color: #008C00;
     border: #343A40 solid 2px;
-    
     position: absolute;
     top: 170px;
     text-align: center;
     color: white;
     font-weight: bolder;
-    right: 3%;
+    margin-right: 10px;
     /*transform: skewX(-24deg);*/
     
 
@@ -319,9 +318,10 @@ padding-top: 7px;
     position: absolute;
     top: 170px;
     text-align: center;
+    vertical-align: center;
     color: white;
     font-weight: bolder;
-    left: 3%;
+    margin-left: 10px;
     /*transform: skewX(24deg);*/
     
 
@@ -334,3 +334,4 @@ margin-bottom: 0;
 .check{
     display: none;
 }
+
